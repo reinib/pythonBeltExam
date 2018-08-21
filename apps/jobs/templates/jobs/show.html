@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Job</title>
+  </head>
+  <body>
+    <a href="/jobs">Back</a> | <a href="/logout_user">Logout</a>
+    <h1>{{job.title}}</h1>
+    <p>Description: {{job.description}}</p>
+    <p>Location: {{job.location}}</p>
+    <p>Posted by: {{job.creator.first_name}} {{trip.creator.last_name}}</p>
+    <p>Posted on: {{job.created_at}}</p>
+
+    <h3> <a href="/jobs/createJoin/{{job.id}}"> Add To My Jobs</a></h3>
+  </body>
+</html>
