@@ -63,7 +63,7 @@ def update(request, job_id):
         id = 'id'
         for error in response['errors']:
             messages.error(request, error)
-        return redirect(f'/jobs/edit/{job_id}')
+        return redirect('/jobs/edit/{}'.format(job_id))
     return redirect('/jobs/')
 
 def delete(request, job_id):
